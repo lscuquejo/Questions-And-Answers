@@ -1,5 +1,10 @@
 # Questions-And-Answers
 
+0 What is Inheritance?
+
+A: In Object Oriented Programming, when a class derives its 
+properties and methods from another class then it is called Inheritance.
+
 1 Why/when to use Inheritance?
 
 A: the principal purpose of using inheritance 
@@ -16,7 +21,7 @@ functions that would be used by child classes.
 3 Why would you create a parent class?
 
 A: You would want to create a parent class when 
-you know you will use a Class as a model for others classes.
+you know you will use a Class as a "model" for others classes.
 
 4 What is Encapsulation?
 
@@ -27,10 +32,26 @@ A: Encapsulation is basically get some functions and wrap it up under a class.
 A: The mainly purpose of using encapsulation is for protection because all the functions and vars should be
 Private besides the setters and getters and constructors.
 
-6 What are constructors ?
+6: What are constructors ?
 
 A: Constructors allows you to initialise your object with properties when you instantiate it.
 
-7: What arguments should Constructors accept ?
+7: What's the difference between Parameters and arguments.
 
-A: Configurations objects.
+A; The Argument is the Property that you set on your function. The Parameter is the Property
+that you set when you call your function
+
+ARGUMENT EXAMPLE ```public function cube($number){} = '$number' argument```
+                
+PARAMETER EXAMPLE```$this->cube(3) = '3' Parameter```
+
+
+8: What arguments should Constructors accept ?
+
+A: All Arguments you think it should use when you call the function.
+
+9: What are the Interfaces?
+
+A: Interfaces are a "model" or a "ruler" for all the classes that implements it.
+
+Example here "https://github.com/lscuquejo/mystuff/tree/master/PHP-Interface-example".
