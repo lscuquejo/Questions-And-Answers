@@ -48,18 +48,18 @@ PARAMETER EXAMPLE```$this->cube(3) = '3' Parameter```
 
 8: What arguments should Constructors accept ?
 
-A: All Arguments you think it should use when you call the function.
+A: All Arguments that you think it should use when you call the function.
 
 9: What are the Interfaces?
 
-A: Interfaces are a "model" or a "ruler" for all the classes that implements it. FYI interfaces
+A: Interfaces are a "model" or a "ruler" for all the classes that implements it. PS interfaces
 cant have any "working" code inside.
 
 Example here "https://github.com/lscuquejo/mystuff/tree/master/PHP-Interface-example".
 
 10: What are the abstract Classes?
 
-A: Abstract Classes are a "model" or a "ruler" for all the classes that implements it. FYI An 
+A: Abstract Classes are a "model" or a "ruler" for all the classes that implements it. PS An 
 abstract class can provide some functionality and leave the rest for derived class.
 
 11: What is the key difference between Abstract Classes/Methods and Interfaces.
