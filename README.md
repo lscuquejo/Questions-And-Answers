@@ -1,6 +1,6 @@
 # Questions-And-Answers
 
-0 What is Inheritance?
+0: What is Inheritance?
 
 A: In Object Oriented Programming, when a class derives its 
 properties and methods from another class then it is called Inheritance.
@@ -66,4 +66,8 @@ abstract class can provide some functionality and leave the rest for derived cla
 
 A: The key difference is that a Abstract Class can provide some functionality and the Interfaces
 BUT the Interfaces are not clases so they use less data.
+
+12:How to make the legendary Cremita Coffee in the company's machine ?
+
+A: coffee max strong 22 sec milk 8 sec coffee.
                                                                                            
