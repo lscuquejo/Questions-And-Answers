@@ -38,7 +38,7 @@ A: Constructors allows you to initialise your object with properties when you in
 
 7: What's the difference between Parameters and arguments.
 
-A; The Argument is the Property that you set on your function. The Parameter is the Property
+A; The Argument is the Value that you set on your function. The Parameter is the Value
 that you set when you call your function
 
 ARGUMENT EXAMPLE ```public function cube($number){} = '$number' argument```
@@ -52,6 +52,18 @@ A: All Arguments you think it should use when you call the function.
 
 9: What are the Interfaces?
 
-A: Interfaces are a "model" or a "ruler" for all the classes that implements it.
+A: Interfaces are a "model" or a "ruler" for all the classes that implements it. FYI interfaces
+cant have any "working" code inside.
 
 Example here "https://github.com/lscuquejo/mystuff/tree/master/PHP-Interface-example".
+
+10: What are the abstract Classes?
+
+A: Abstract Classes are a "model" or a "ruler" for all the classes that implements it. FYI An 
+abstract class can provide some functionality and leave the rest for derived class.
+
+11: What is the key difference between Abstract Classes/Methods and Interfaces.
+
+A: The key difference is that a Abstract Class can provide some functionality and the Interfaces
+BUT the Interfaces are not clases so they use less data.
+                                                                                           
