@@ -71,9 +71,4 @@ BUT the Interfaces are not clases so they use less data.
 
 Polymorphism is an OOP concept that makes Classes have different 
 functionality while sharing the a Common interface (Interface, or
-Abstract Classes)
-
-13:How to make the legendary Cremita Coffee in the company's machine ?
-
-A: coffee max strong 22 sec milk 8 sec coffee.
-                                                                                           
+Abstract Classes)                                           
