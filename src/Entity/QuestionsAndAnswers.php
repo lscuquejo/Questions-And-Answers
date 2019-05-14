@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\String_;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\QuestionsAndAnswersRepository")
@@ -96,5 +97,33 @@ class QuestionsAndAnswers
         }
 
         return $this;
+
     }
+
+    /**
+     * Generates the magic method
+     *
+     */
+    public function __toString(){
+        // to show the name of the Category in the select
+        return $this->Questions;
+        // to show the id of the Category in the select
+        // return $this->id;
+    }
+//
+//    public function __toString(){
+//        // to show the name of the Category in the select
+//        return $this->examples;
+//        // to show the id of the Category in the select
+//        // return $this->id;
+//    }
+////
+////    /**
+////     * @return string
+////     */
+////    public function __toString(){
+////        // to show the name of the Category in the select
+////        return $this->examples[];
+////        // to show the id of the Category in the select
+////        // return $this->id;
 }
