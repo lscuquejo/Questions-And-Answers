@@ -3,6 +3,13 @@
 {% block title %}QuestionsAndAnswers{% endblock %}
 
 {% block stylesheets %}
+    <style>
+
+        #pagination {
+            align-content: center;
+        }
+
+    </style>
 {% endblock %}
 
 {% block body %}
@@ -51,4 +58,9 @@
         </div>
         </tbody>
     </table>
+    <div id="pagination">
+        <div class="navigation">
+            {{ knp_pagination_render(questions_and_answers) }}
+        </div>
+    </div>
 {% endblock %}

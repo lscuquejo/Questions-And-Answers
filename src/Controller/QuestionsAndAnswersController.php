@@ -8,20 +8,30 @@ use App\Repository\QuestionsAndAnswersRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/qna")
+ * @Route("/")
  */
 class QuestionsAndAnswersController extends AbstractController
 {
     /**
      * @Route("/", name="questions_and_answers_index", methods={"GET"})
      */
-    public function index(QuestionsAndAnswersRepository $questionsAndAnswersRepository): Response
+    public function index(QuestionsAndAnswersRepository $questionsAndAnswersRepository, PaginatorInterface $paginator, Request $request): Response
     {
+        $questions_and_answers = $questionsAndAnswersRepository->findAll();
+
+        $result = $paginator->paginate(
+            $questions_and_answers,
+            $request->query->getInt('page', 1),
+            $request->query->getInt('limit', 3)
+        );
+
         return $this->render('questions_and_answers/index.html.twig', [
-            'questions_and_answers' => $questionsAndAnswersRepository->findAll(),
+//            'questions_and_answers' => $questionsAndAnswersRepository->findAll(),
+            'questions_and_answers' => $result,
         ]);
     }
 
