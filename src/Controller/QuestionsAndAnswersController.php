@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\ExampleRepository;
 use App\Entity\QuestionsAndAnswers;
 use App\Form\QuestionsAndAnswersType;
 use App\Repository\QuestionsAndAnswersRepository;
@@ -19,7 +20,7 @@ class QuestionsAndAnswersController extends AbstractController
     /**
      * @Route("/", name="questions_and_answers_index", methods={"GET"})
      */
-    public function index(QuestionsAndAnswersRepository $questionsAndAnswersRepository, PaginatorInterface $paginator, Request $request): Response
+    public function index(QuestionsAndAnswersRepository $questionsAndAnswersRepository, PaginatorInterface $paginator, Request $request, ExampleRepository $exampleRepository): Response
     {
         $questions_and_answers = $questionsAndAnswersRepository->findAll();
 
@@ -32,6 +33,7 @@ class QuestionsAndAnswersController extends AbstractController
         return $this->render('questions_and_answers/index.html.twig', [
 //            'questions_and_answers' => $questionsAndAnswersRepository->findAll(),
             'questions_and_answers' => $result,
+            'examples' => $exampleRepository->findAll(),
         ]);
     }
 

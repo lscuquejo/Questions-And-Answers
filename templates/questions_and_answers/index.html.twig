@@ -40,8 +40,9 @@
                                         {{ questions_and_answer.Answers }}
                                         <ul class="buttonshowedit float-right">
                                             <br>
-                                            <a href="{{ path('questions_and_answers_show', {'id': questions_and_answer.id}) }}"><button type="button" class="btn btn-outline-primary btn-sm">Show Data</button></a>
-                                            <a href="{{ path('questions_and_answers_edit', {'id': questions_and_answer.id}) }}"><button type="button" class="btn btn-outline-primary btn-sm">Edit Data.</button></a>
+                                            <a href="{{ path('questions_and_answers_edit', {'id': questions_and_answer.id}) }}"><button type="button" class="btn btn-outline-primary btn-sm">Edit Q.N.A</button></a>
+                                            <a href="{{ path('example_edit', {'id': questions_and_answer.id}) }}"><button type="button" class="btn btn-outline-primary btn-sm">Edit E.g</button></a>
+                                            <a href="{{ path('example_show', {'id': questions_and_answer.id}) }}"><button type="button" class="btn btn-outline-primary btn-sm">Show E.g</button></a>
                                         </ul>
                                     </div>
                                 </div>
@@ -60,7 +61,11 @@
     </table>
     <div id="pagination">
         <div class="navigation">
-            {{ knp_pagination_render(questions_and_answers) }}
+            {{ knp_pagination_render(questions_and_answers, null, {}, {
+                'position': 'centered',
+                'size': 'medium',
+                'rounded': true,
+            }) }}
         </div>
     </div>
 {% endblock %}
