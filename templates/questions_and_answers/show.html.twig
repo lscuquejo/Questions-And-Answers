@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}QuestionsAndAnswers{% endblock %}
+
+{% block body %}
+    <h1>QuestionsAndAnswers</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ questions_and_answer.id }}</td>
+            </tr>
+            <tr>
+                <th>Questions</th>
+                <td>{{ questions_and_answer.Questions }}</td>
+            </tr>
+            <tr>
+                <th>Answers</th>
+                <td>{{ questions_and_answer.Answers }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('questions_and_answers_index') }}">back to list</a>
+
+    <a href="{{ path('questions_and_answers_edit', {'id': questions_and_answer.id}) }}">edit</a>
+
+    {{ include('questions_and_answers/_delete_form.html.twig') }}
+{% endblock %}

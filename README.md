@@ -72,3 +72,9 @@ BUT the Interfaces are not clases so they use less data.
 Polymorphism is an OOP concept that makes Classes have different 
 functionality while sharing the a Common interface (Interface, or
 Abstract Classes)                                           
+
+13:What is an associative array?
+
+A: an associative array is and array that has all the keys named or setted.
+
+14:
