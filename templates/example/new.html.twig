@@ -3,6 +3,9 @@
 {% block title %}New Example{% endblock %}
 
 {% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
     <h1>Create new Example</h1>
 
     {{ include('example/_form.html.twig') }}

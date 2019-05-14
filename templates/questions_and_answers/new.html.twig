@@ -3,6 +3,9 @@
 {% block title %}New QuestionsAndAnswers{% endblock %}
 
 {% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
     <h1>Create new QuestionsAndAnswers</h1>
 
     {{ include('questions_and_answers/_form.html.twig') }}

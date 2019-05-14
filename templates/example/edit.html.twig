@@ -3,6 +3,9 @@
 {% block title %}Edit Example{% endblock %}
 
 {% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
     <h1>Edit Example</h1>
 
     {{ include('example/_form.html.twig', {'button_label': 'Update'}) }}

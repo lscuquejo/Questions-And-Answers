@@ -3,6 +3,9 @@
 {% block title %}QuestionsAndAnswers{% endblock %}
 
 {% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
     <h1>QuestionsAndAnswers</h1>
 
     <table class="table">

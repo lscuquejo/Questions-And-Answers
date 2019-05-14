@@ -3,6 +3,10 @@
 {% block title %}Edit QuestionsAndAnswers{% endblock %}
 
 {% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+
     <h1>Edit QuestionsAndAnswers</h1>
 
     {{ include('questions_and_answers/_form.html.twig', {'button_label': 'Update'}) }}

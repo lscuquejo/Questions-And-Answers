@@ -3,6 +3,9 @@
 {% block title %}Example{% endblock %}
 
 {% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
     <h1>Example</h1>
 
     <table class="table">
